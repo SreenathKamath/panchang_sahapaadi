@@ -1,35 +1,48 @@
-# Backend image -- api/main.py + panchang_core.py, run with:
-#   docker build -t panchang-api .
-#   docker run -p 8000:8000 -e OPENROUTER_API_KEY=... panchang-api
-#
-# Coolify (or any Docker-based host) builds this directly from the repo root.
+# Backend image for Hugging Face Spaces (Docker SDK) -- see README.md for the Space
+# config block. Spaces run the container as a non-root user and only guarantee /tmp
+# as writable at runtime, and free-tier Spaces sleep after inactivity -- so the
+# embedding model is downloaded and cached INTO the image at build time (while the
+# builder has normal network/write access), and the container runs fully offline
+# after that. This means a cold wake-up only pays for loading the model from local
+# disk, never a ~1GB re-download.
 FROM python:3.11-slim
 
-WORKDIR /app
+# Spaces convention: a non-root user with a real home directory.
+RUN useradd -m -u 1000 user
+USER user
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
+WORKDIR $HOME/app
 
 # Dependencies first so this layer stays cached across code-only changes.
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY --chown=user requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Application code and the data it serves.
-COPY panchang_core.py .
-COPY api/ ./api/
-COPY panchang_1201/ ./panchang_1201/
-COPY embeddings_cache.npz .
+COPY --chown=user panchang_core.py .
+COPY --chown=user api/ ./api/
+COPY --chown=user panchang_1201/ ./panchang_1201/
+COPY --chown=user embeddings_cache.npz .
 # Only the optimized scans the gallery actually serves -- not the raw HEIC/PDF
 # originals, which would needlessly bloat the image.
-COPY ["panchang images/jpegmini_optimized/", "./panchang images/jpegmini_optimized/"]
+COPY --chown=user ["panchang images/jpegmini_optimized/", "./panchang images/jpegmini_optimized/"]
 
-# Where the sentence-transformers model gets cached on first load. Mount this as a
-# persistent volume in production so the ~1GB model download survives redeploys
-# instead of re-fetching every time the container is rebuilt.
-ENV HF_HOME=/app/.cache/huggingface
-RUN mkdir -p /app/.cache/huggingface
+# Bake the embedding model into the image now, while the network is available and
+# the cache dir is writable.
+ENV HF_HOME=$HOME/app/.cache/huggingface
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('intfloat/multilingual-e5-base')"
+
+# From here on, no network/model-registry calls at runtime -- everything needed is
+# already on disk from the build step above.
+ENV HF_HUB_OFFLINE=1
+ENV TRANSFORMERS_OFFLINE=1
 
 # Comma-separated list of origins allowed to call the API -- set this to your real
-# frontend URL(s) in production; defaults to common local-dev ports.
+# Vercel frontend URL via the Space's "Variables and secrets" settings; defaults to
+# common local-dev ports so it still runs standalone without that configured.
 ENV ALLOWED_ORIGINS="http://localhost:5173,http://127.0.0.1:5173"
-ENV PORT=8000
+# 7860 is Hugging Face Spaces' standard Docker SDK port (see README.md's app_port).
+ENV PORT=7860
 
-EXPOSE 8000
+EXPOSE 7860
 CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT}"]
