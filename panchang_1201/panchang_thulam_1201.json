@@ -1,0 +1,333 @@
+{
+  "panchang_month": {
+    "saka_varsham": 1947,
+    "samvatsaram": "Vishwavasu",
+    "malayalam_month": "Thulam",
+    "malayalam_month_number": 1201,
+    "malayalam_month_span": "Ashwina - Karthika masam",
+    "gregorian_range": "2025-10-18 to 2025-11-15",
+    "sunrise_sunset_table": [
+      {"malayalam_date": 1, "udayam": "6.18", "astamayam": "6.04"},
+      {"malayalam_date": 2, "udayam": "6.18", "astamayam": "6.03"},
+      {"malayalam_date": 3, "udayam": "6.18", "astamayam": "6.02"},
+      {"malayalam_date": 5, "udayam": "6.19", "astamayam": "6.01"},
+      {"malayalam_date": 7, "udayam": "6.19", "astamayam": "6.00"},
+      {"malayalam_date": 9, "udayam": "6.19", "astamayam": "5.59"},
+      {"malayalam_date": 11, "udayam": "6.19", "astamayam": "5.58"},
+      {"malayalam_date": 13, "udayam": "6.19", "astamayam": "5.58"},
+      {"malayalam_date": 15, "udayam": "6.20", "astamayam": "5.58"},
+      {"malayalam_date": 17, "udayam": "6.20", "astamayam": "5.57"},
+      {"malayalam_date": 20, "udayam": "6.21", "astamayam": "5.57"},
+      {"malayalam_date": 22, "udayam": "6.22", "astamayam": "5.57"},
+      {"malayalam_date": 23, "udayam": "6.22", "astamayam": "5.56"},
+      {"malayalam_date": 25, "udayam": "6.23", "astamayam": "5.56"},
+      {"malayalam_date": 28, "udayam": "6.24", "astamayam": "5.56"},
+      {"malayalam_date": 30, "udayam": "6.25", "astamayam": "5.56"}
+    ],
+    "planetary_positions": [
+      {"planet": "Guru", "malayalam_date": 1, "raw_text": "Gu.1.vai.7.47.kar", "confidence": "low - abbreviation unclear"},
+      {"planet": "Budh", "malayalam_date": 7, "raw_text": "Bu.7.pa.12.33.thu", "confidence": "low - abbreviation unclear"},
+      {"planet": "Kuja", "malayalam_date": 10, "raw_text": "Ku.10.pa.3.42.thu", "confidence": "low - abbreviation unclear"},
+      {"planet": "Shukra", "malayalam_date": 16, "raw_text": "Shu.16.pa.01.15.thu", "confidence": "low - abbreviation unclear"}
+    ],
+    "committee_members": [
+      {"name": "A. Anoop Bhatt", "area": "Grama Purohit, Karanakodam", "phone": "9447713418"},
+      {"name": "Thantri S. Sudheendra Bhatt", "area": "Prakrutha Vedanta Poojari Devaswom", "phone": "9388273114"},
+      {"name": "Thantri V. Ganguly Vasudev", "area": "Chendamangalam Devaswom, Vedanta Poojari", "phone": "9746187348"},
+      {"name": "Thantri V. Vinod Kumar Bhatt", "area": "Kodungallur, Grama Poojari", "phone": "9249733303"},
+      {"name": "Sree R. Ravikumar Bhatt", "area": "Grama Purohit", "phone": "9447817743"}
+    ]
+  },
+  "days": [
+    {
+      "malayalam_date": 1, "gregorian_date": "2025-10-18", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Dwadashi", "end_time": "15-05"},
+      "nakshatra": {"name": "Chathayam", "end_time": "23-31"},
+      "yoga": {"name": "Brahma", "end_time": "48-06"},
+      "karana": {"name": "Taitila", "end_time": "15-05"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Pradosham"]
+    },
+    {
+      "malayalam_date": 2, "gregorian_date": "2025-10-19", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Trayodashi", "end_time": "56-00"},
+      "nakshatra": {"name": "Atham", "end_time": "49-28"},
+      "yoga": {"name": "Vishkambha", "end_time": "27-45", "confidence": "low"},
+      "karana": {"name": "Vanija", "end_time": "18-56"},
+      "highlighted": true, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 3, "gregorian_date": "2025-10-20", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Chaturdashi", "end_time": "23-39"},
+      "nakshatra": {"name": "Chithira", "end_time": "34-58"},
+      "yoga": {"name": "Preeti", "end_time": "40-53", "confidence": "low"},
+      "karana": {"name": "Kaulava", "end_time": "23-39"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Naraka Chaturdashi, Deepavali; Kollam Thiruvamathil sampath keralam koodi thirumala kshetrathil sangamam sevakal (verify wording against source)"]
+    },
+    {
+      "malayalam_date": 4, "gregorian_date": "2025-10-21", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Amavasya", "end_time": "29-03"},
+      "nakshatra": {"name": "Chothi", "end_time": "41-43"},
+      "yoga": {"name": "Vaidhriti", "end_time": "52-26"},
+      "karana": {"name": "Garija", "end_time": "29-03"},
+      "highlighted": false, "moon_phase_marker": "filled_circle_amavasya",
+      "special_notes": ["Aavani Avittam"]
+    },
+    {
+      "malayalam_date": 5, "gregorian_date": "2025-10-22", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Prathipad", "end_time": "34-58"},
+      "nakshatra": {"name": "Vishakham", "end_time": "48-35"},
+      "yoga": {"name": "Vishkambha", "end_time": "54-29", "confidence": "low"},
+      "karana": {"name": "Bava", "end_time": "34-58"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 6, "gregorian_date": "2025-10-23", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Dwitiya", "end_time": "41-13"},
+      "nakshatra": {"name": "Anizham", "end_time": "56-23"},
+      "yoga": {"name": "Sadhya", "end_time": "59-01"},
+      "karana": {"name": "Balava", "end_time": "41-13"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Karthika masarambham"]
+    },
+    {
+      "malayalam_date": 7, "gregorian_date": "2025-10-24", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Tritiya", "end_time": "47-35"},
+      "nakshatra": {"name": "Thrikketta", "end_time": "53-46"},
+      "yoga": {"name": "Shubha", "end_time": "60-00"},
+      "karana": {"name": "Kaulava", "end_time": "14-24"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 8, "gregorian_date": "2025-10-25", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Chaturthi", "end_time": "53-46"},
+      "nakshatra": {"name": "Moolam", "end_time": "60-00"},
+      "yoga": {"name": "Shubha", "end_time": "60-00"},
+      "karana": {"name": "Bava", "end_time": "20-43"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Kartika masam Vaidyanatha (Naganchi) observance - Kochi Thirumala kshetram (wording partially unclear, verify against source)"]
+    },
+    {
+      "malayalam_date": 9, "gregorian_date": "2025-10-26", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "59-27", "confidence": "low"},
+      "nakshatra": {"name": "Pooradam", "end_time": null, "confidence": "low"},
+      "yoga": {"name": "Shukla", "end_time": "08-26", "confidence": "low"},
+      "karana": {"name": "Bava", "end_time": "46-31", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Adhika Trayodashi (reference note, verify against source)"]
+    },
+    {
+      "malayalam_date": 10, "gregorian_date": "2025-10-27", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Shashti", "end_time": "60-00"},
+      "nakshatra": {"name": "Uthradam", "end_time": "17-53"},
+      "yoga": {"name": "Shukla", "end_time": "02-50"},
+      "karana": {"name": "Kaulava", "end_time": "13-27"},
+      "highlighted": true, "moon_phase_marker": "small_deity_icon",
+      "special_notes": ["Sree Ugranarasimha Moorthi punyatithi; Kartika Deepam observance (verify exact wording against source)"]
+    },
+    {
+      "malayalam_date": 11, "gregorian_date": "2025-10-28", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Saptami", "end_time": "04-14"},
+      "nakshatra": {"name": "Thiruvonam", "end_time": "02-50"},
+      "yoga": {"name": "Shukla", "end_time": "03-50", "confidence": "low"},
+      "karana": {"name": "Garija", "end_time": "04-14"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Kandu vilakku (temple lamp observance, verify exact wording)"]
+    },
+    {
+      "malayalam_date": 12, "gregorian_date": "2025-10-29", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "07-42"},
+      "nakshatra": {"name": "Avittam", "end_time": "30-37"},
+      "yoga": {"name": "Shukla", "end_time": "02-35", "confidence": "low"},
+      "karana": {"name": "Bava", "end_time": "09-36"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Krishnapaksha Ekadashi vratam (reference note position - verify against source)"]
+    },
+    {
+      "malayalam_date": 13, "gregorian_date": "2025-10-30", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Navami", "end_time": "34-58"},
+      "nakshatra": {"name": "Avittam", "end_time": "31-20"},
+      "yoga": {"name": "Dhriti", "end_time": "55-32"},
+      "karana": {"name": "Bava", "end_time": "09-16"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 14, "gregorian_date": "2025-10-31", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Dashami", "end_time": "03-53"},
+      "nakshatra": {"name": "Chathayam", "end_time": "60-00"},
+      "yoga": {"name": "Shoola", "end_time": "20-43", "confidence": "low"},
+      "karana": {"name": "Bava", "end_time": "07-12"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 15, "gregorian_date": "2025-11-01", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "03-01", "confidence": "low"},
+      "nakshatra": {"name": "Pururuttathi", "end_time": "26-50"},
+      "yoga": {"name": "Vyaghata", "end_time": "42-07"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 16, "gregorian_date": "2025-11-02", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "03-01"},
+      "nakshatra": {"name": "Pururuttathi", "end_time": "26-50"},
+      "yoga": {"name": "Vyaghata", "end_time": "42-07"},
+      "karana": {"name": null, "end_time": "03-01", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": "star_symbol_unexplained",
+      "special_notes": ["Chaturmasi vratam; Deepapooja, Bhoomipooja, Grihapravesham observance (wording partially uncertain)"]
+    },
+    {
+      "malayalam_date": 17, "gregorian_date": "2025-11-03", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Dwadashi", "end_time": "49-26"},
+      "nakshatra": {"name": "Uthrattathi", "end_time": "21-55"},
+      "yoga": {"name": "Harshana", "end_time": "33-19"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Ayilyam kaviyoodi, Kadumpuraana Chaturthi (wording uncertain, verify against source)"]
+    },
+    {
+      "malayalam_date": 18, "gregorian_date": "2025-11-04", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Trayodashi", "end_time": "40-41"},
+      "nakshatra": {"name": "Revathi", "end_time": "15-36"},
+      "yoga": {"name": "Vajra", "end_time": "23-27"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Karthika Pournami sopanam (wording uncertain, verify against source)"]
+    },
+    {
+      "malayalam_date": 19, "gregorian_date": "2025-11-05", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Pournami", "end_time": "01-50"},
+      "nakshatra": {"name": "Ashwathi", "end_time": "12-50"},
+      "yoga": {"name": "Vishkambha", "end_time": "06-00"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": "hollow_circle_pournami", "special_notes": []
+    },
+    {
+      "malayalam_date": 20, "gregorian_date": "2025-11-06", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Prathipad", "end_time": "21-26"},
+      "nakshatra": {"name": "Bharani", "end_time": "00-34"},
+      "yoga": {"name": "Vyatipata", "end_time": "01-50"},
+      "karana": {"name": null, "end_time": "21-26", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Karthika paksharambham; approx 9 hr 30 min - Vishuvat-sarangam reference (wording uncertain)"]
+    },
+    {
+      "malayalam_date": 21, "gregorian_date": "2025-11-07", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Dwitiya", "end_time": "11-52"},
+      "nakshatra": {"name": "Karthika", "end_time": "45-32"},
+      "yoga": {"name": "Variyan", "end_time": "01-50"},
+      "karana": {"name": null, "end_time": "11-52", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Shuklapaksha Ekadashi vratam; approx 8 hr 08 min - Vishuvat-sarangam reference (wording uncertain)"]
+    },
+    {
+      "malayalam_date": 22, "gregorian_date": "2025-11-08", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Tritiya", "end_time": "02-58"},
+      "nakshatra": {"name": "Rohini", "end_time": "39-13"},
+      "yoga": {"name": "Dhruva", "end_time": "30-26"},
+      "karana": {"name": "Bava", "end_time": "02-58"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Karthika Chaturthi; samooha Punaravasu pooja (wording uncertain, verify against source)"]
+    },
+    {
+      "malayalam_date": 23, "gregorian_date": "2025-11-09", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "48-55"},
+      "nakshatra": {"name": "Thiruvathira", "end_time": "44-27"},
+      "yoga": {"name": "Siddhi", "end_time": "21-42"},
+      "karana": {"name": "Balava", "end_time": "21-51"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 24, "gregorian_date": "2025-11-10", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Shashti", "end_time": "31-06"},
+      "nakshatra": {"name": "Punartham", "end_time": "29-50"},
+      "yoga": {"name": "Vyatipata", "end_time": "14-18"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 25, "gregorian_date": "2025-11-11", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Saptami", "end_time": "33-19"},
+      "nakshatra": {"name": "Pooyam", "end_time": "08-26"},
+      "yoga": {"name": "Variyan", "end_time": "12-57"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 26, "gregorian_date": "2025-11-12", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "41-31"},
+      "nakshatra": {"name": "Ayilyam", "end_time": "30-33"},
+      "yoga": {"name": null, "end_time": null, "confidence": "low"},
+      "karana": {"name": null, "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 27, "gregorian_date": "2025-11-13", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Navami", "end_time": "42-59"},
+      "nakshatra": {"name": "Makam", "end_time": "33-09"},
+      "yoga": {"name": null, "end_time": "04-00", "confidence": "low"},
+      "karana": {"name": null, "end_time": "11-29", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 28, "gregorian_date": "2025-11-14", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Dashami", "end_time": "46-08"},
+      "nakshatra": {"name": "Pooram", "end_time": "37-24"},
+      "yoga": {"name": null, "end_time": "00-11", "confidence": "low"},
+      "karana": {"name": null, "end_time": "14-22", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 29, "gregorian_date": "2025-11-15", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "50-36"},
+      "nakshatra": {"name": "Uthram", "end_time": "42-58"},
+      "yoga": {"name": null, "end_time": null, "confidence": "low"},
+      "karana": {"name": "Bava", "end_time": "18-13"},
+      "highlighted": false, "moon_phase_marker": "star_symbol_unexplained",
+      "special_notes": ["Pakal 09 hr 11 min - Chandrodayam; pakal 01 hr 37 min - Vrishchika sankramam"]
+    }
+  ],
+  "extraction_metadata": {
+    "source": "TapScanner PDF scan - clean, flat, no glare or skew (same good quality as Kannimasam)",
+    "overall_confidence": "high for header, date/weekday mapping (cross-validated against Kanni's end date), and most tithi/nakshatra readings; lower for a number of yoga/karana fields in the back half of the month (dates 24-29) where end-time digits were harder to distinguish, and for several special-notes entries whose exact wording is uncertain",
+    "known_issues": [
+      "Leading grid cell (top-left, before date 1): shows what appears to be a carryover reference to the previous month's last Sunday, but the printed digits didn't resolve confidently enough to include as a reliable data point - left out of the days array rather than guessed",
+      "Karana fields for dates 15, 17, 18, 19, 24, 25, 26 are null/low-confidence where digits were ambiguous",
+      "Yoga fields for dates 26, 27, 28, 29 are null/low-confidence for the same reason",
+      "Several special-notes entries (dates 3, 8, 9, 10, 11, 16, 17, 18, 20, 21, 22) have wording flagged as uncertain - the general topic (Deepavali, Kartika-related observances) is consistent with what's expected for this time of year in 2025, but exact phrasing needs a human check against the source",
+      "Planetary transit box abbreviations remain unresolved, consistent with prior months"
+    ],
+    "recommendation": "This scan is workable but slightly less crisp than Kanni's - if you have the option, a marginally higher-DPI scan setting in TapScanner would likely resolve most of the flagged fields above. Otherwise, a quick manual pass over just the flagged dates (rather than the whole month) is the fastest path to a fully clean file.",
+    "field_naming_note": "Standardized the committee/advisor field to 'committee_members' for this file. Kanni (month 2) used 'advisors_and_calculation_committee' and Chingam (month 1) used 'vedic_sabha_committee' - recommend renaming those two to match once all 12 months are in, so downstream code only needs to handle one field name."
+  }
+}

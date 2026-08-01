@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets -- never commit the real key, only .env.example documents what's needed
+.env
+
+# Local scratch/build artifacts
+frontend/dist/

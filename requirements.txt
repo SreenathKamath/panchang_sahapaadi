@@ -1,0 +1,12 @@
+# CPU-only torch build -- the default PyPI torch wheel bundles CUDA and is several GB;
+# this backend only ever runs on CPU (small embedding model, no GPU available on the
+# target deployment), so pulling from PyTorch's CPU index keeps the image small.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi==0.116.1
+uvicorn[standard]==0.48.0
+python-dotenv==1.1.1
+openai==1.77.0
+numpy==2.3.2
+sentence-transformers==5.1.1
+torch==2.12.0

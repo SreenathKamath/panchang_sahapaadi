@@ -1,0 +1,343 @@
+{
+  "panchang_month": {
+    "saka_varsham": 1935,
+    "samvatsaram": "Vijaya",
+    "malayalam_month": "Edavam",
+    "malayalam_month_number": 1188,
+    "malayalam_month_span": "Vaishakha - Jyeshtha masam",
+    "gregorian_range": "2013-05-15 to 2013-06-14",
+    "price_marking": "Rs. 15.00",
+    "sunrise_sunset_table": [
+      {"malayalam_date": 1, "udayam": "6.08", "astamayam": "6.37"},
+      {"malayalam_date": 6, "udayam": "6.07", "astamayam": "6.37"},
+      {"malayalam_date": 7, "udayam": "6.07", "astamayam": "6.38"},
+      {"malayalam_date": 8, "udayam": "6.06", "astamayam": "6.38"},
+      {"malayalam_date": 13, "udayam": "6.06", "astamayam": "6.39"},
+      {"malayalam_date": 15, "udayam": "6.06", "astamayam": "6.40"},
+      {"malayalam_date": 20, "udayam": "6.06", "astamayam": "6.41"},
+      {"malayalam_date": 25, "udayam": "6.06", "astamayam": "6.42"},
+      {"malayalam_date": 29, "udayam": "6.06", "astamayam": "6.43"},
+      {"malayalam_date": 30, "udayam": "6.07", "astamayam": "6.43"},
+      {"malayalam_date": 31, "udayam": "6.07", "astamayam": "6.43"}
+    ],
+    "planetary_positions": [
+      {"planet": "Kuja", "malayalam_date": 9, "raw_text": "Ku 9 pa 9.13 mi", "confidence": "low - abbreviation unclear"},
+      {"planet": "Budh", "malayalam_date": 13, "raw_text": "Bu 13 ra 12.40 mi", "confidence": "low - abbreviation unclear"},
+      {"planet": "Guru", "malayalam_date": 15, "raw_text": "Gu 15 pa 10.55 mi", "confidence": "low - abbreviation unclear"},
+      {"planet": "Guru", "malayalam_date": 17, "raw_text": "Gu 17 ka 6.49 mi", "confidence": "low - abbreviation unclear, may be a different planet code"}
+    ]
+  },
+  "days": [
+    {
+      "malayalam_date": 1, "gregorian_date": "2013-05-15", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "29.06"},
+      "nakshatra": {"name": "Punarvasu", "end_time": "41.54"},
+      "yoga": {"name": "Shula", "end_time": "21.47"},
+      "karana": {"name": "Balava", "end_time": "29.06"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 2, "gregorian_date": "2013-05-16", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Shashti", "end_time": "34.22"},
+      "nakshatra": {"name": "Pooyam", "end_time": "48.26"},
+      "yoga": {"name": "Ganda", "end_time": "23.38"},
+      "karana": {"name": "Balava", "end_time": "01.48"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Chembangam Sree Venugopalaswamy temple and Kochi Thrikkariyoor Jagannatha Sreemoolam Devi temple - Prathishtha dinam (consecration day)"]
+    },
+    {
+      "malayalam_date": 3, "gregorian_date": "2013-05-17", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Saptami", "end_time": "38.30"},
+      "nakshatra": {"name": "Ayilyam", "end_time": "53.49"},
+      "yoga": {"name": "Vriddhi", "end_time": "24.38"},
+      "karana": {"name": "Garija", "end_time": "06.33"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 4, "gregorian_date": "2013-05-18", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "41.03"},
+      "nakshatra": {"name": "Makam", "end_time": "57.35"},
+      "yoga": {"name": "Dhruva", "end_time": "24.30"},
+      "karana": {"name": "Bhadra", "end_time": "09.55"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Pallikkurathi Sree Dhanwantari temple - Aaraattu"]
+    },
+    {
+      "malayalam_date": 5, "gregorian_date": "2013-05-19", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Navami", "end_time": "41.46"},
+      "nakshatra": {"name": "Pooram", "end_time": "59.31"},
+      "yoga": {"name": "Vyaghata", "end_time": "23.00"},
+      "karana": {"name": "Balava", "end_time": "11.35"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 6, "gregorian_date": "2013-05-20", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Dashami", "end_time": "40.34"},
+      "nakshatra": {"name": "Uthram", "end_time": "59.31"},
+      "yoga": {"name": "Harshana", "end_time": "20.00"},
+      "karana": {"name": "Taitila", "end_time": "11.21"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Aluva Ananthanarayanapuram Thirumala temple - Kodiyettam (flag-hoisting)"]
+    },
+    {
+      "malayalam_date": 7, "gregorian_date": "2013-05-21", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "37.24"},
+      "nakshatra": {"name": "Atham", "end_time": "57.36"},
+      "yoga": {"name": "Shubha", "end_time": "35.26"},
+      "karana": {"name": "Vanija", "end_time": "09.10"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Vaishakha vratha samapti (concluding day); Aluva Balabhadra temple - Prathishtha dinam"]
+    },
+    {
+      "malayalam_date": 8, "gregorian_date": "2013-05-22", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Dwadashi", "end_time": "32.27"},
+      "nakshatra": {"name": "Chithira", "end_time": "53.55"},
+      "yoga": {"name": "Brahma", "end_time": "09.21"},
+      "karana": {"name": "Kaulava", "end_time": "09.21", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Shukla paksha Ekadashi vratam; Edavam kaar Sree Lakshminarayana temple - moonnil Prathishtha dinam"]
+    },
+    {
+      "malayalam_date": 9, "gregorian_date": "2013-05-23", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Trayodashi", "end_time": "25.58"},
+      "nakshatra": {"name": "Chithira", "end_time": "48.50"},
+      "yoga": {"name": "Thiruvonam", "end_time": "05.29"},
+      "karana": {"name": "Makeeram", "end_time": "39.36"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": [
+        "Kochi Thirumala temple - Tritiya poopandinu and Sree Rama temple - new Prathishtha dinam; Kochi Kshetra Panampilly Sreeramodara temple - Prathishtha dinam, Pradosham",
+        "Sree Kazhirayam Sree Vasudeva Kshetram; Aluva Ananthanarayanapuram Thirumala temple - Aaraattu"
+      ]
+    },
+    {
+      "malayalam_date": 10, "gregorian_date": "2013-05-24", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Chaturdashi", "end_time": "18.15"},
+      "nakshatra": {"name": "Vishakham", "end_time": "42.37"},
+      "yoga": {"name": "Vaidhriti", "end_time": "43.52"},
+      "karana": {"name": "Vanija", "end_time": "18.15"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 11, "gregorian_date": "2013-05-25", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "09.38", "conflict_flag": "Grid shows Ashtami, but the special-notes panel for date 11 explicitly says 'Pournami' (full moon) and this date carries a hollow-circle moon marker. Likely the correct tithi is Pournami - verify against original scan."},
+      "nakshatra": {"name": "Anizham", "end_time": "35.45"},
+      "yoga": {"name": "Vyaghata", "end_time": "33.49"},
+      "karana": {"name": "Bava", "end_time": "09.38"},
+      "highlighted": true, "moon_phase_marker": "amavasya_or_pournami_unclear",
+      "special_notes": ["Pournami (Vaishakha Pournami); at 07 hr 44 min into Makaram, Rohini nakshatra begins"]
+    },
+    {
+      "malayalam_date": 12, "gregorian_date": "2013-05-26", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Prathipad", "end_time": "00.30"},
+      "nakshatra": {"name": "Thrikketta", "end_time": "28.36"},
+      "yoga": {"name": "Siddha", "end_time": "23.32"},
+      "karana": {"name": "Kaulava", "end_time": "00.30"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Dwitiya; Sankata Chaturthi (Chandrodayam 10.15 pm)"]
+    },
+    {
+      "malayalam_date": 13, "gregorian_date": "2013-05-27", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Tritiya", "end_time": "42.28"},
+      "nakshatra": {"name": "Moolam", "end_time": "21.37"},
+      "yoga": {"name": "Sadhya", "end_time": "13.20"},
+      "karana": {"name": "Vanija", "end_time": "16.45"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 14, "gregorian_date": "2013-05-28", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Chaturthi", "end_time": "34.22"},
+      "nakshatra": {"name": "Pooradam", "end_time": "15.12"},
+      "yoga": {"name": "Shubha", "end_time": "03.33"},
+      "karana": {"name": "Balava", "end_time": "08.12"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 15, "gregorian_date": "2013-05-29", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "27.19"},
+      "nakshatra": {"name": "Ashwathi", "end_time": "09.43"},
+      "yoga": {"name": "Shobhana", "end_time": "14.32"},
+      "karana": {"name": "Pooyam", "end_time": "60.00", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 16, "gregorian_date": "2013-05-30", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Shashti", "end_time": "21.36"},
+      "nakshatra": {"name": "Thiruvonam", "end_time": "05.29"},
+      "yoga": {"name": "Atiganda", "end_time": "20.49"},
+      "karana": {"name": "Vyaghata", "end_time": "43.23"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Aluva Sree Bhagavad temple - Prathishtha dinam"]
+    },
+    {
+      "malayalam_date": 17, "gregorian_date": "2013-05-31", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Saptami", "end_time": "17.29"},
+      "nakshatra": {"name": "Avittam", "end_time": "02.49"},
+      "yoga": {"name": "Atiganda", "end_time": "34.06"},
+      "karana": {"name": "Vyaghata", "end_time": "17.29"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Thiruvonam; Aluva Ganapathikulam Thirumala temple - Garuda Prathishtha dinam", "Pururuttathi"]
+    },
+    {
+      "malayalam_date": 18, "gregorian_date": "2013-06-01", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "15.06"},
+      "nakshatra": {"name": "Chathayam", "end_time": "01.53"},
+      "yoga": {"name": "Atiganda", "end_time": "30.01"},
+      "karana": {"name": "Dhriti", "end_time": "33.26"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Uthrattathi"]
+    },
+    {
+      "malayalam_date": 19, "gregorian_date": "2013-06-02", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Navami", "end_time": "14.30"},
+      "nakshatra": {"name": "Pururuttathi", "end_time": "02.44"},
+      "yoga": {"name": "Preeti", "end_time": "27.21"},
+      "karana": {"name": "Galija", "end_time": "14.30"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 20, "gregorian_date": "2013-06-03", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Dashami", "end_time": "15.35"},
+      "nakshatra": {"name": "Uthrattathi", "end_time": "05.15"},
+      "yoga": {"name": "Ayushman", "end_time": "25.59"},
+      "karana": {"name": "Bhagra", "end_time": "15.35"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 21, "gregorian_date": "2013-06-04", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "18.09"},
+      "nakshatra": {"name": "Revathi", "end_time": "09.15"},
+      "yoga": {"name": "Saubhagya", "end_time": "25.46"},
+      "karana": {"name": "Balava", "end_time": "18.09"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Krishna paksha Ekadashi vratam"]
+    },
+    {
+      "malayalam_date": 22, "gregorian_date": "2013-06-05", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Dwadashi", "end_time": "22.00"},
+      "nakshatra": {"name": "Ashwathi", "end_time": "09.43"},
+      "yoga": {"name": "Shobhana", "end_time": "14.32"},
+      "karana": {"name": "Pooyam", "end_time": "60.00", "confidence": "low"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Sreedh Rajatheertha Swamy - punya thithi (further text illegible at this resolution)"]
+    },
+    {
+      "malayalam_date": 23, "gregorian_date": "2013-06-06", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Trayodashi", "end_time": "26.52"},
+      "nakshatra": {"name": "Bharani", "end_time": "20.49"},
+      "yoga": {"name": "Atiganda", "end_time": "20.49"},
+      "karana": {"name": "Bhadra", "end_time": null, "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 24, "gregorian_date": "2013-06-07", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Chaturdashi", "end_time": "32.26"},
+      "nakshatra": {"name": "Karthika", "end_time": "27.47"},
+      "yoga": {"name": "Sukarma", "end_time": "30.01"},
+      "karana": {"name": "Shakuni", "end_time": "27.26"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 25, "gregorian_date": "2013-06-08", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Amavasya", "end_time": "38.27"},
+      "nakshatra": {"name": "Rohini", "end_time": "35.12"},
+      "yoga": {"name": "Dhriti", "end_time": "32.25"},
+      "karana": {"name": "Chatushpada", "end_time": "05.17"},
+      "highlighted": true, "moon_phase_marker": "amavasya",
+      "special_notes": ["Amavasi; at 05 hr 35 min, Mrigashira nakshatra begins"]
+    },
+    {
+      "malayalam_date": 26, "gregorian_date": "2013-06-09", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Prathipad", "end_time": "44.00"},
+      "nakshatra": {"name": "Makayiram", "end_time": "42.49"},
+      "yoga": {"name": "Shula", "end_time": "34.59"},
+      "karana": {"name": "Kimstughna", "end_time": "11.26"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Jyeshtha masaarambham (start of Jyeshtha month) - remaining text illegible at this resolution"]
+    },
+    {
+      "malayalam_date": 27, "gregorian_date": "2013-06-10", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Dwitiya", "end_time": "50.52"},
+      "nakshatra": {"name": "Thiruvathira", "end_time": "37.33"},
+      "yoga": {"name": "Ganda", "end_time": "17.41"},
+      "karana": {"name": "Balava", "end_time": null, "confidence": "low"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Sree Kasiragiri Sree Sudhi Theerthaswamiyarude ashrama sweekaram"]
+    },
+    {
+      "malayalam_date": 28, "gregorian_date": "2013-06-11", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Tritiya", "end_time": "56.48"},
+      "nakshatra": {"name": "Punarvasu", "end_time": "57.48"},
+      "yoga": {"name": "Vriddhi", "end_time": "39.56"},
+      "karana": {"name": "Taitila", "end_time": "23.46"},
+      "highlighted": true, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 29, "gregorian_date": "2013-06-12", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Chaturthi", "end_time": "60.00", "confidence": "low"},
+      "nakshatra": {"name": "Pooyam", "end_time": "60.00", "confidence": "low"},
+      "yoga": {"name": "Vriddhi", "end_time": "41.57"},
+      "karana": {"name": "Vanija", "end_time": "29.26"},
+      "highlighted": true, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 30, "gregorian_date": "2013-06-13", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Chaturthi", "end_time": "02.12"},
+      "nakshatra": {"name": "Pooyam", "end_time": "04.37"},
+      "yoga": {"name": "Vyaghata", "end_time": "43.23"},
+      "karana": {"name": "Bhadra", "end_time": null, "confidence": "low"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Adhika Chaturthi, Adhipaurya (Jyeshtha month adjustment note - verify against source)"]
+    },
+    {
+      "malayalam_date": 31, "gregorian_date": "2013-06-14", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "06.37"},
+      "nakshatra": {"name": "Ayilyam", "end_time": "10.30"},
+      "yoga": {"name": "Harshana", "end_time": "44.01"},
+      "karana": {"name": "Bhadra", "end_time": "06.37"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Avalayya... (footer text partially cropped/illegible - verify against source)"]
+    }
+  ],
+  "extraction_metadata": {
+    "extraction_method": "direct vision reading by Claude, single pass, no cropping",
+    "overall_confidence": "high for large date numbers, weekday grouping, and Gregorian-date mapping (cross-validated); medium for tithi/nakshatra/yoga/karana names and end-times; low for the top-right planetary transit box and portions of dense special-notes text",
+    "known_issues": [
+      "Date 11: tithi conflict between grid (Ashtami) and special-notes/moon-marker (Pournami) - needs manual check against original scan",
+      "Planetary position box (Kuja/Budh/Guru transits): abbreviation codes not confidently resolved",
+      "Special notes for dates 22, 26, 30, 31: text partially illegible at this image resolution",
+      "A few karana end_times are null/low-confidence where digits were ambiguous"
+    ],
+    "recommendation": "Run this same page through the VLM API pipeline (extract_panchang.py) as a second independent pass, then diff the two outputs - fields where both passes agree can be trusted with higher confidence, and disagreements pinpoint exactly which cells need a human to check the original scan."
+  }
+}
