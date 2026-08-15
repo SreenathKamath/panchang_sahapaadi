@@ -30,6 +30,12 @@ COPY --chown=user ["panchang images/jpegmini_optimized/", "./panchang images/jpe
 # Bake the embedding model into the image now, while the network is available and
 # the cache dir is writable.
 ENV HF_HOME=$HOME/app/.cache/huggingface
+# WORKDIR above is created by Docker as root regardless of the active USER -- a
+# long-standing Docker quirk -- so `user` can't create .cache under it on its own.
+# Fix that ownership explicitly before the download runs as `user` below.
+USER root
+RUN mkdir -p $HF_HOME && chown -R user:user $HOME/app/.cache
+USER user
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('intfloat/multilingual-e5-base')"
 
 # From here on, no network/model-registry calls at runtime -- everything needed is
