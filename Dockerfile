@@ -21,7 +21,7 @@ RUN pip install --no-cache-dir --user -r requirements.txt
 # Application code and the data it serves.
 COPY --chown=user panchang_core.py .
 COPY --chown=user api/ ./api/
-COPY --chown=user panchang_1201/ ./panchang_1201/
+COPY --chown=user panchang_1202/ ./panchang_1202/
 COPY --chown=user embeddings_cache.npz .
 # Only the optimized scans the gallery actually serves -- not the raw HEIC/PDF
 # originals, which would needlessly bloat the image.

@@ -54,8 +54,8 @@ function App() {
       </main>
 
       <footer className="px-4 py-8 text-center text-xs text-panchang-cream/50">
-        Data extracted from the printed Saraswat Panchang, Saka 1947 &middot; 1201 Chingam
-        &ndash; Thulam
+        Data extracted from the printed Saraswat Panchang, Saka 1948 &middot; 1202 Chingam
+        &ndash; Karkidakam
       </footer>
     </div>
   );

@@ -15,7 +15,7 @@ const MALAYALAM_MONTH_LABELS = {
   meenam: "മീനം",
   medam: "മേടം",
   edavam: "എടവം",
-  midhunam: "മിഥുനം",
+  mithunam: "മിഥുനം",
   karkidakam: "കർക്കിടകം",
 };
 

@@ -1,0 +1,326 @@
+{
+  "panchang_month": {
+    "saka_varsham": 1948,
+    "samvatsaram": "Parabhava",
+    "malayalam_month": "Kumbham",
+    "malayalam_month_number": 1202,
+    "malayalam_month_span": "Magha - Phalguna masam",
+    "gregorian_range": "2027-02-13 to 2027-03-13",
+    "sunrise_sunset_table": [
+      {"malayalam_date": 1, "udayam": "6.52", "astamayam": "6.32"},
+      {"malayalam_date": 3, "udayam": "6.51", "astamayam": "6.32"},
+      {"malayalam_date": 5, "udayam": "6.51", "astamayam": "6.33"},
+      {"malayalam_date": 6, "udayam": "6.50", "astamayam": "6.33"},
+      {"malayalam_date": 9, "udayam": "6.49", "astamayam": "6.33"},
+      {"malayalam_date": 11, "udayam": "6.49", "astamayam": "6.34"},
+      {"malayalam_date": 12, "udayam": "6.48", "astamayam": "6.34"},
+      {"malayalam_date": 14, "udayam": "6.47", "astamayam": "6.34"},
+      {"malayalam_date": 16, "udayam": "6.46", "astamayam": "6.34"},
+      {"malayalam_date": 17, "udayam": "6.46", "astamayam": "6.35"},
+      {"malayalam_date": 18, "udayam": "6.45", "astamayam": "6.35"},
+      {"malayalam_date": 20, "udayam": "6.44", "astamayam": "6.35"},
+      {"malayalam_date": 22, "udayam": "6.43", "astamayam": "6.35"},
+      {"malayalam_date": 24, "udayam": "6.42", "astamayam": "6.35"},
+      {"malayalam_date": 26, "udayam": "6.41", "astamayam": "6.35"},
+      {"malayalam_date": 28, "udayam": "6.40", "astamayam": "6.35"},
+      {"malayalam_date": 30, "udayam": "6.39", "astamayam": "6.35"}
+    ],
+    "planetary_positions": [
+      {"planet": "Budh", "malayalam_date": 12, "raw_text": "Bu12-4.40am ma", "confidence": "low - abbreviation unclear"},
+      {"planet": "Budh", "malayalam_date": 12, "raw_text": "Bu12-3.16pm ma", "confidence": "low - abbreviation unclear, possibly a duplicate reading"},
+      {"planet": "Kuja", "malayalam_date": 25, "raw_text": "Ku25 ratri-12.57 to karka", "confidence": "low - abbreviation unclear"}
+    ],
+    "committee_members": []
+  },
+  "days": [
+    {
+      "malayalam_date": 1, "gregorian_date": "2027-02-13", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Saptami", "end_time": "48-15"},
+      "nakshatra": {"name": "Bharani", "end_time": "57-01"},
+      "yoga": {"name": "Shubha", "end_time": "26-14"},
+      "karana": {"name": "Garija", "end_time": "19-31"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 2, "gregorian_date": "2027-02-14", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "44-41"},
+      "nakshatra": {"name": "Karthika", "end_time": "54-54"},
+      "yoga": {"name": "Brahma", "end_time": "20-49"},
+      "karana": {"name": "Bhadra", "end_time": "16-38"},
+      "highlighted": true, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 3, "gregorian_date": "2027-02-15", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Navami", "end_time": "39-50"},
+      "nakshatra": {"name": "Rohini", "end_time": "51-33"},
+      "yoga": {"name": "Mahendra", "end_time": "14-21"},
+      "karana": {"name": "Balava", "end_time": "12-25"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Sreeyanavami"]
+    },
+    {
+      "malayalam_date": 4, "gregorian_date": "2027-02-16", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Dashami", "end_time": "33-49"},
+      "nakshatra": {"name": "Makayiram", "end_time": "47-04"},
+      "yoga": {"name": "Vaidhriti", "end_time": "06-54"},
+      "karana": {"name": "Bhadra", "end_time": "06-57"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Purakkad Sreevenugopala kshetram - Aaroot; Magha vratam samapthi"]
+    },
+    {
+      "malayalam_date": 5, "gregorian_date": "2027-02-17", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "26-50"},
+      "nakshatra": {"name": "Thiruvathira", "end_time": "41-43"},
+      "yoga": {"name": "Preeti", "end_time": "49-35"},
+      "karana": {"name": null, "end_time": "26-50", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": "star_symbol_unexplained",
+      "special_notes": ["Shukrapaksha Ekadashi vratam; Kochi mannaseva kshetram - Thaalapoli"]
+    },
+    {
+      "malayalam_date": 6, "gregorian_date": "2027-02-18", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Dwadashi", "end_time": "19-11"},
+      "nakshatra": {"name": "Punartham", "end_time": "35-45"},
+      "yoga": {"name": "Ayushman", "end_time": "40-08"},
+      "karana": {"name": null, "end_time": "19-11", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Kochi Thirumala kshetram - Oonjal seva; Pradosham"]
+    },
+    {
+      "malayalam_date": 7, "gregorian_date": "2027-02-19", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Trayodashi", "end_time": "11-08"},
+      "nakshatra": {"name": "Pooyam", "end_time": "29-31"},
+      "yoga": {"name": "Saubhagya", "end_time": "30-28"},
+      "karana": {"name": "Taitila", "end_time": "11-08"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Ambalade Sreekuladevatha kshetrangalil prathishtho mahotsavam"]
+    },
+    {
+      "malayalam_date": 8, "gregorian_date": "2027-02-20", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Chaturdashi", "end_time": "03-03"},
+      "nakshatra": {"name": "Ayilyam", "end_time": "23-22"},
+      "yoga": {"name": "Shobhana", "end_time": "20-54"},
+      "karana": {"name": "Vanija", "end_time": "03-03"},
+      "highlighted": false, "moon_phase_marker": "hollow_circle_pournami",
+      "special_notes": ["Idathikko mahanakshathram 12.37am; Pournami"]
+    },
+    {
+      "malayalam_date": 9, "gregorian_date": "2027-02-21", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Prathipad", "end_time": "48-12"},
+      "nakshatra": {"name": "Makam", "end_time": "17-41"},
+      "yoga": {"name": "Atiganda", "end_time": "11-42"},
+      "karana": {"name": "Balava", "end_time": "21-38"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Ambalade Sreekuladevatha kshetram - samooha pooja"]
+    },
+    {
+      "malayalam_date": 10, "gregorian_date": "2027-02-22", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Dwitiya", "end_time": "42-13"},
+      "nakshatra": {"name": "Pooyam", "end_time": "12-52"},
+      "yoga": {"name": "Sukarma", "end_time": "03-10"},
+      "karana": {"name": "Taitila", "end_time": "15-04"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 11, "gregorian_date": "2027-02-23", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Tritiya", "end_time": "37-39"},
+      "nakshatra": {"name": "Uthram", "end_time": "09-16"},
+      "yoga": {"name": "Shubha", "end_time": "07-16"},
+      "karana": {"name": "Vanija", "end_time": "09-44"},
+      "highlighted": true, "moon_phase_marker": "small_icon",
+      "special_notes": ["Sankashti Chaturthi (verify wording); local kshetram prathishtadinam"]
+    },
+    {
+      "malayalam_date": 12, "gregorian_date": "2027-02-24", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Chaturthi", "end_time": "34-47"},
+      "nakshatra": {"name": "Atham", "end_time": "07-14"},
+      "yoga": {"name": "Ganda", "end_time": "44-14"},
+      "karana": {"name": "Bhava", "end_time": "06-00"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 13, "gregorian_date": "2027-02-25", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "33-52"},
+      "nakshatra": {"name": "Chithira", "end_time": "07-00"},
+      "yoga": {"name": "Vriddhi", "end_time": "40-48"},
+      "karana": {"name": "Kaulava", "end_time": "04-05"},
+      "highlighted": true, "moon_phase_marker": "small_icon",
+      "special_notes": ["Sreemad Vishnugopaswami punyathidhi (Vrindavanam)"]
+    },
+    {
+      "malayalam_date": 14, "gregorian_date": "2027-02-26", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Shashti", "end_time": "34-57"},
+      "nakshatra": {"name": "Chothi", "end_time": "08-42"},
+      "yoga": {"name": "Dhriti", "end_time": "38-56"},
+      "karana": {"name": "Garija", "end_time": "04-10"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 15, "gregorian_date": "2027-02-27", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Saptami", "end_time": "37-57"},
+      "nakshatra": {"name": "Vishakham", "end_time": "12-19"},
+      "yoga": {"name": "Vyatipata", "end_time": "38-31"},
+      "karana": {"name": "Bhadra", "end_time": "06-14"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 16, "gregorian_date": "2027-02-28", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Ashtami", "end_time": "42-37"},
+      "nakshatra": {"name": "Anizham", "end_time": "17-39"},
+      "yoga": {"name": "Harshana", "end_time": "39-22"},
+      "karana": {"name": "Balava", "end_time": "10-07"},
+      "highlighted": false, "moon_phase_marker": "small_icon",
+      "special_notes": ["Ambalade Sreekuladevatha kshetram - samooha Sathyanarayana pooja"]
+    },
+    {
+      "malayalam_date": 17, "gregorian_date": "2027-03-01", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Navami", "end_time": "48-30"},
+      "nakshatra": {"name": "Thrikketta", "end_time": "24-20"},
+      "yoga": {"name": "Vajra", "end_time": "41-09"},
+      "karana": {"name": "Taitila", "end_time": "15-27"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 18, "gregorian_date": "2027-03-02", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Dashami", "end_time": "55-05"},
+      "nakshatra": {"name": "Moolam", "end_time": "31-51"},
+      "yoga": {"name": "Siddhi", "end_time": "43-30"},
+      "karana": {"name": "Vanija", "end_time": "21-45"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 19, "gregorian_date": "2027-03-03", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "60-00"},
+      "nakshatra": {"name": "Pooradam", "end_time": "39-40"},
+      "yoga": {"name": "Vyatipata", "end_time": "46-00"},
+      "karana": {"name": "Bava", "end_time": "28-27"},
+      "highlighted": false, "moon_phase_marker": "star_symbol_unexplained",
+      "special_notes": ["Krishnapaksha Ekadashi vratam"]
+    },
+    {
+      "malayalam_date": 20, "gregorian_date": "2027-03-04", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Ekadashi", "end_time": "01-47"},
+      "nakshatra": {"name": "Uthradam", "end_time": "47-15"},
+      "yoga": {"name": "Variyan", "end_time": "48-17"},
+      "karana": {"name": null, "end_time": "01-47", "confidence": "low"},
+      "highlighted": false, "moon_phase_marker": "star_symbol_unexplained",
+      "special_notes": ["Adhikaikadashi (verify wording)"]
+    },
+    {
+      "malayalam_date": 21, "gregorian_date": "2027-03-05", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Dwadashi", "end_time": "08-02"},
+      "nakshatra": {"name": "Thiruvonam", "end_time": "54-09"},
+      "yoga": {"name": "Parigha", "end_time": "50-02"},
+      "karana": {"name": "Taitila", "end_time": "08-02"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Purvabhadrapada mahanakshathram 6.58am; Pradosham"]
+    },
+    {
+      "malayalam_date": 22, "gregorian_date": "2027-03-06", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Trayodashi", "end_time": "13-28"},
+      "nakshatra": {"name": "Avittam", "end_time": "60-00"},
+      "yoga": {"name": "Shiva", "end_time": "51-01"},
+      "karana": {"name": "Vanija", "end_time": "13-28"},
+      "highlighted": true, "moon_phase_marker": null,
+      "special_notes": ["Mahashivarathri"]
+    },
+    {
+      "malayalam_date": 23, "gregorian_date": "2027-03-07", "weekday": "Ravivaram",
+      "rahukalam": "4.30 - 6.00 p.m.", "gulikakalam": "26 nazhika",
+      "tithi": {"name": "Chaturdashi", "end_time": "17-46"},
+      "nakshatra": {"name": "Shatabhisha", "end_time": "00-04"},
+      "yoga": {"name": "Siddhi", "end_time": "51-04"},
+      "karana": {"name": "Shakuni", "end_time": "17-46"},
+      "highlighted": true, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 24, "gregorian_date": "2027-03-08", "weekday": "Chandravaram",
+      "rahukalam": "7.30 - 9.00 a.m.", "gulikakalam": "22 nazhika",
+      "tithi": {"name": "Amavasya", "end_time": "20-40"},
+      "nakshatra": {"name": "Chathayam", "end_time": "04-48"},
+      "yoga": {"name": "Sadhya", "end_time": "50-10"},
+      "karana": {"name": "Naga", "end_time": "20-40"},
+      "highlighted": false, "moon_phase_marker": "filled_circle_amavasya",
+      "special_notes": ["Amavasi"]
+    },
+    {
+      "malayalam_date": 25, "gregorian_date": "2027-03-09", "weekday": "Kujavaram",
+      "rahukalam": "3.00 - 4.30 p.m.", "gulikakalam": "18 nazhika",
+      "tithi": {"name": "Prathipad", "end_time": "22-34"},
+      "nakshatra": {"name": "Pururuttathi", "end_time": "08-17"},
+      "yoga": {"name": "Shubha", "end_time": "48-17"},
+      "karana": {"name": "Bhava", "end_time": "22-34"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 26, "gregorian_date": "2027-03-10", "weekday": "Budhavaram",
+      "rahukalam": "12.00 - 1.30 p.m.", "gulikakalam": "14 nazhika",
+      "tithi": {"name": "Dwitiya", "end_time": "23-06"},
+      "nakshatra": {"name": "Uthrattathi", "end_time": "10-35"},
+      "yoga": {"name": "Shubha", "end_time": "45-29"},
+      "karana": {"name": "Kaulava", "end_time": "23-06"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 27, "gregorian_date": "2027-03-11", "weekday": "Guruvaram",
+      "rahukalam": "1.30 - 3.00 p.m.", "gulikakalam": "10 nazhika",
+      "tithi": {"name": "Tritiya", "end_time": "22-29"},
+      "nakshatra": {"name": "Revathi", "end_time": "11-44"},
+      "yoga": {"name": "Brahma", "end_time": "41-49"},
+      "karana": {"name": "Garija", "end_time": "22-29"},
+      "highlighted": false, "moon_phase_marker": null, "special_notes": []
+    },
+    {
+      "malayalam_date": 28, "gregorian_date": "2027-03-12", "weekday": "Sukravaram",
+      "rahukalam": "10.30 - 12.00 noon", "gulikakalam": "6 nazhika",
+      "tithi": {"name": "Chaturthi", "end_time": "20-49"},
+      "nakshatra": {"name": "Ashwathi", "end_time": "11-52"},
+      "yoga": {"name": "Mahendra", "end_time": "37-22"},
+      "karana": {"name": "Vajra", "end_time": "20-49"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Kodungallur Sreerajagopala kshetram - Dwaja prathishta"]
+    },
+    {
+      "malayalam_date": 29, "gregorian_date": "2027-03-13", "weekday": "Mandavaram",
+      "rahukalam": "9.00 - 10.30 a.m.", "gulikakalam": "2 nazhika",
+      "tithi": {"name": "Panchami", "end_time": "18-14"},
+      "nakshatra": {"name": "Bharani", "end_time": "11-05"},
+      "yoga": {"name": "Vaidhriti", "end_time": "32-13"},
+      "karana": {"name": "Balava", "end_time": "18-14"},
+      "highlighted": false, "moon_phase_marker": null,
+      "special_notes": ["Kodungallur Sreerajagopala kshetram - Kodiyettom"]
+    }
+  ],
+  "extraction_metadata": {
+    "source": "HEIC phone photo, converted and cropped - even lighting, no glare detected",
+    "overall_confidence": "high for header, date/weekday mapping (Feb 13 2027 = Saturday, confirmed via continuity from Makaram's end date), and most tithi/nakshatra/yoga/karana fields",
+    "known_issues": [
+      "Special-notes panel this month was very dense with compound entries; several dates' notes are best-effort paraphrases and should be verified against the source if precise wording matters",
+      "A few icon markers (dates 11, 13, 16) could not be confidently identified beyond 'small icon present' - possibly deity images rather than moon-phase markers",
+      "Planetary transit box: one entry may be a duplicate misread rather than two distinct events",
+      "Committee members section was not visible in this photo's crop"
+    ],
+    "recommendation": "This was a solid extraction overall - the main gap is the dense special-notes text, which is worth a manual check if your chatbot needs to answer detailed festival questions for this month."
+  }
+}

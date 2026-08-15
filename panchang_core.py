@@ -33,8 +33,8 @@ load_dotenv(override=True)
 # ---------------- Config ----------------
 PROJECT_ROOT = Path(__file__).parent
 # Scoped to this year's folder on purpose -- next year's data will arrive as a sibling
-# folder (e.g. panchang_1202/) with its own JSON_GLOB, not dropped in here.
-DATA_DIR = PROJECT_ROOT / "panchang_1201"
+# folder (e.g. panchang_1203/) with its own JSON_GLOB, not dropped in here.
+DATA_DIR = PROJECT_ROOT / "panchang_1202"
 JSON_GLOB = "panchang_*.json"   # every month file in DATA_DIR is auto-discovered, nothing to edit per month
 IMAGES_DIR = PROJECT_ROOT / "panchang images" / "jpegmini_optimized"
 EMBED_CACHE_PATH = PROJECT_ROOT / "embeddings_cache.npz"
@@ -51,7 +51,7 @@ SIM_THRESHOLD = 0.55   # below this, we tell the user we're not confident rather
 # are named (e.g. "1201_1.jpg" = year 1201, 1st month = Chingam).
 MALAYALAM_MONTH_ORDER = [
     "chingam", "kanni", "thulam", "vrischikam", "dhanu", "makaram",
-    "kumbham", "meenam", "medam", "edavam", "midhunam", "karkidakam",
+    "kumbham", "meenam", "medam", "edavam", "mithunam", "karkidakam",
 ]
 
 client = OpenAI(
@@ -72,6 +72,13 @@ def load_all_data(data_dir: Path = DATA_DIR, pattern: str = JSON_GLOB) -> list[d
     for path in paths:
         with open(path, "r", encoding="utf-8") as f:
             datasets.append(json.load(f))
+
+    # Filenames sort alphabetically (chingam, dhanu, edavam, kanni, ...), not
+    # chronologically -- that happened to match for a 3-month demo (chingam, kanni,
+    # thulam) but silently scrambles month order once a full 12-month year is loaded.
+    # Sorting by each month's first day's actual date is unambiguous regardless of
+    # spelling/ordering conventions in the source JSON.
+    datasets.sort(key=lambda d: d["days"][0]["gregorian_date"])
     return datasets
 
 
