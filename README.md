@@ -1,14 +1,6 @@
----
-title: Saraswat Panchang API
-emoji: 🪔
-colorFrom: yellow
-colorTo: red
-sdk: docker
-app_port: 7860
-pinned: false
----
-
 # Saraswat Panchang — a community calendar you can just *ask*
+
+**Live**: https://panchang-sahapaadi.vercel.app
 
 A chatbot (and a small companion app) built around the Saraswat Panchang — the
 traditional Malayalam calendar our community uses every year for tithis,
@@ -110,26 +102,61 @@ tradition this calendar comes from — the sacred flame, the tilak, the marigold
   so year-to-year inconsistencies in the source don't require code changes.
 - **Packaging**: Dockerized backend, ready to run anywhere that speaks Docker.
 
+### Versions
+
+| Layer | Component | Version |
+|---|---|---|
+| Backend | Python | 3.11 (`python:3.11-slim` base image) |
+| Backend | FastAPI | 0.116.1 |
+| Backend | Uvicorn | 0.48.0 |
+| Backend | OpenAI SDK (OpenRouter client) | 1.77.0 |
+| Backend | sentence-transformers | 5.1.1 |
+| Backend | PyTorch (CPU-only build) | 2.12.0 |
+| Backend | NumPy | 2.3.2 |
+| Frontend | React | 19.2 |
+| Frontend | Vite | 8.2 |
+| Frontend | Tailwind CSS | 4.3 |
+| Infra | Docker Engine | 29.1.3 (`docker.io`, Ubuntu apt) |
+| Infra | Ubuntu Server (EC2) | 24.04 LTS |
+| Infra | Caddy | latest stable (auto-updating apt repo) |
+
 ## Where things stand
 
 The whole thing has moved past the demo stage: it now runs on the **complete 1202
 panchang — all twelve Malayalam months, Chingam through Karkidakam** — not a
 sample slice. Every feature above (chat, monthly pages, calendar & festivals) has
 been tested end-to-end against this full year of real community data, with its
-own reference scans and committee contacts. That's the milestone this README is
-marking: the idea went from "wouldn't it be nice if..." to a working product,
-carrying a full year of real data, ready for the community to actually use.
+own reference scans and committee contacts.
 
-Taking it live is the current phase. The plan: the frontend deploys to Vercel,
-and the backend — since it needs to keep a small AI model loaded in memory rather
-than starting cold on every request — ships as a Dockerized Hugging Face Space
-(free CPU tier: no credit card required, and enough memory to hold the embedding
-model comfortably), with the Space's own subdomain providing HTTPS out of the box.
+**It's live.** The idea went from "wouldn't it be nice if..." to a working
+product the community can actually reach — see [Live deployment](#live-deployment)
+below for exactly how it's hosted.
+
+## Live deployment
+
+- **Frontend** — [Vercel](https://vercel.com), building from the `frontend/`
+  directory (Vite production build). A single `VITE_API_BASE_URL` environment
+  variable is the only thing that points it at the backend.
+- **Backend** — a single AWS EC2 instance:
+  - `t3.small` (2 vCPU / 2 GiB RAM), Ubuntu Server 24.04 LTS, 30 GiB gp3 EBS.
+  - Runs the same Dockerized FastAPI app as local dev, unchanged — the embedding
+    model stays fully self-hosted in-process, no remote inference calls.
+  - A 2 GiB swap file backstops the instance's limited RAM under load.
+  - [Caddy](https://caddyserver.com) reverse-proxies the container and handles
+    HTTPS automatically (Let's Encrypt, auto-renewing), on a free
+    [DuckDNS](https://www.duckdns.org) subdomain — a certificate needs a real
+    domain, not just a bare IP.
+  - An Elastic IP keeps that domain pointed at the same instance permanently,
+    even across a stop/restart.
+  - The container runs with `--restart unless-stopped`, so it recovers from a
+    crash or an instance reboot without manual intervention.
+  - Hosted within AWS's introductory account credit, with a monthly AWS Budget
+    alert configured as a spend guardrail.
 
 ## What's next
 
-- Wiring up the live deployment: the backend as a Hugging Face Space, the frontend
-  on Vercel, pointed at each other with a real production URL.
+- Revisit hosting costs before the AWS introductory credit runs low (roughly a
+  6-month runway at current usage) — renew, resize, or move host as needed.
 - Frontend polish and new UI ideas as they come up.
 - Next year's panchang (1203) will land as its own sibling data folder when it's
   ready — the code is already built to pick it up with zero changes required, the

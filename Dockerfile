@@ -1,13 +1,12 @@
-# Backend image for Hugging Face Spaces (Docker SDK) -- see README.md for the Space
-# config block. Spaces run the container as a non-root user and only guarantee /tmp
-# as writable at runtime, and free-tier Spaces sleep after inactivity -- so the
-# embedding model is downloaded and cached INTO the image at build time (while the
-# builder has normal network/write access), and the container runs fully offline
-# after that. This means a cold wake-up only pays for loading the model from local
+# Backend image for the FastAPI app -- runs anywhere that speaks Docker (currently
+# deployed on a single AWS EC2 instance, see README.md's "Live deployment" section).
+# The embedding model is downloaded and cached INTO the image at build time (while
+# the builder has normal network/write access), so the container runs fully offline
+# after that -- a container restart only pays for loading the model from local
 # disk, never a ~1GB re-download.
 FROM python:3.11-slim
 
-# Spaces convention: a non-root user with a real home directory.
+# Non-root user with a real home directory -- good practice regardless of host.
 RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user \
@@ -44,10 +43,12 @@ ENV HF_HUB_OFFLINE=1
 ENV TRANSFORMERS_OFFLINE=1
 
 # Comma-separated list of origins allowed to call the API -- set this to your real
-# Vercel frontend URL via the Space's "Variables and secrets" settings; defaults to
-# common local-dev ports so it still runs standalone without that configured.
+# Vercel frontend URL via `docker run -e ALLOWED_ORIGINS=...` (or an --env-file) at
+# deploy time; defaults to common local-dev ports so it still runs standalone
+# without that configured.
 ENV ALLOWED_ORIGINS="http://localhost:5173,http://127.0.0.1:5173"
-# 7860 is Hugging Face Spaces' standard Docker SDK port (see README.md's app_port).
+# Arbitrary internal port -- the deployed instance binds it to 127.0.0.1 only and
+# lets Caddy reverse-proxy it over HTTPS (see README.md's "Live deployment").
 ENV PORT=7860
 
 EXPOSE 7860
