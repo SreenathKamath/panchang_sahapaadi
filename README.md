@@ -112,22 +112,26 @@ tradition this calendar comes from — the sacred flame, the tilak, the marigold
 
 ## Where things stand
 
-Right now, the whole thing runs locally — backend and frontend both — and every
-feature above has been tested end-to-end against a real chunk of this year's
-panchang data (the first three Malayalam months). That's the milestone this README
-is marking: the idea went from "wouldn't it be nice if..." to a working product you
-can actually talk to.
+The whole thing has moved past the demo stage: it now runs on the **complete 1202
+panchang — all twelve Malayalam months, Chingam through Karkidakam** — not a
+sample slice. Every feature above (chat, monthly pages, calendar & festivals) has
+been tested end-to-end against this full year of real community data, with its
+own reference scans and committee contacts. That's the milestone this README is
+marking: the idea went from "wouldn't it be nice if..." to a working product,
+carrying a full year of real data, ready for the community to actually use.
 
-Taking it further live is the next phase. The plan there: the frontend deploys to
-Vercel, and the backend — since it needs to keep a small AI model loaded and ready
-rather than starting cold on every request — runs in a Docker container on a small
-DigitalOcean droplet, managed through Coolify (an open-source, self-hosted
-deployment tool, so there's no lock-in to any one platform), with a free DuckDNS
-domain providing HTTPS.
+Taking it live is the current phase. The plan: the frontend deploys to Vercel,
+and the backend — since it needs to keep a small AI model loaded in memory rather
+than starting cold on every request — ships as a Dockerized Hugging Face Space
+(free CPU tier: no credit card required, and enough memory to hold the embedding
+model comfortably), with the Space's own subdomain providing HTTPS out of the box.
 
 ## What's next
 
+- Wiring up the live deployment: the backend as a Hugging Face Space, the frontend
+  on Vercel, pointed at each other with a real production URL.
 - Frontend polish and new UI ideas as they come up.
-- More months' data as they get transcribed — the code is already built to pick up
-  a new month's JSON with zero changes required.
-- Actually taking it live for the community to use.
+- Next year's panchang (1203) will land as its own sibling data folder when it's
+  ready — the code is already built to pick it up with zero changes required, the
+  same way it already absorbs every year-to-year naming inconsistency in the
+  source data.
