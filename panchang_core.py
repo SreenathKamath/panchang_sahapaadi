@@ -18,6 +18,7 @@ Architecture:
                              facts into a natural-language reply
 """
 
+import logging
 import os
 import re
 import json
@@ -39,10 +40,25 @@ JSON_GLOB = "panchang_*.json"   # every month file in DATA_DIR is auto-discovere
 IMAGES_DIR = PROJECT_ROOT / "panchang images" / "jpegmini_optimized"
 EMBED_CACHE_PATH = PROJECT_ROOT / "embeddings_cache.npz"
 EMBED_MODEL_NAME = "intfloat/multilingual-e5-base"   # good Malayalam support, runs on CPU
-LLM_MODEL = "openai/gpt-oss-20b:free"  # pinned deliberately -- "openrouter/free" is an
-                                        # auto-router that can land on non-chat models
-                                        # (e.g. nvidia/nemotron-3.5-content-safety:free,
-                                        # a moderation classifier, not an assistant)
+# Tried in order, falling through to the next on ANY error -- OpenRouter's free tier
+# is volatile: models get rate-limited under shared-pool load (429), pulled from free
+# entirely (404, hit with openai/gpt-oss-20b:free on 2026-08-22), or are flaky in other
+# ways. Deliberately explicit models, never "openrouter/free" -- that auto-router can
+# land on a non-chat model (e.g. nvidia/nemotron-3.5-content-safety:free, a moderation
+# classifier, not an assistant). Nemotron entries are last-resort: confirmed working,
+# but the "-nano-"/"-super-" reasoning ones sometimes leak their reasoning into the
+# reply itself (e.g. "User asks: ... They want the assistant to...") instead of a
+# clean answer -- worth re-checking OpenRouter's free model list periodically and
+# promoting whichever is currently most reliable.
+LLM_MODELS = [
+    "google/gemma-4-26b-a4b-it:free",   # Google AI Studio
+    "z-ai/glm-5.2:free",                 # Z.ai -- different provider, so a Google-wide
+                                          # outage (both gemma entries share this pool,
+                                          # confirmed 2026-08-22) only costs one wasted
+                                          # call before landing here, not two
+    "google/gemma-4-31b-it:free",        # Google AI Studio, same pool as the first entry
+    "nvidia/nemotron-3-nano-30b-a3b:free",
+]
 TOP_K = 3
 SIM_THRESHOLD = 0.55   # below this, we tell the user we're not confident rather than guess
 
@@ -549,24 +565,41 @@ def generate_reply(query: str, context_docs: list[dict], note: str | None = None
     if note:
         context_text = f"{note}\n\n{context_text}"
 
-    response = client.chat.completions.create(
-        model=LLM_MODEL,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": f"CONTEXT:\n{context_text}\n\nQUESTION: {query}"},
-        ],
-        temperature=0.3,
-        max_tokens=900,
-    )
-    content = response.choices[0].message.content
-    # The free-tier model occasionally returns empty content (hit during testing) --
-    # observed on a reasoning-style model that can spend its whole token budget on
-    # hidden reasoning and leave nothing for the actual answer. Fail soft rather than
-    # crashing the whole chat loop on a None.strip().
-    if not content:
-        return ("Sorry, I couldn't put together a reply for that just now -- "
-                 "please try again or rephrase the question.")
-    return content.strip()
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": f"CONTEXT:\n{context_text}\n\nQUESTION: {query}"},
+    ]
+
+    last_error: Exception | None = None
+    for model in LLM_MODELS:
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                temperature=0.3,
+                max_tokens=900,
+            )
+        except Exception as exc:
+            # Rate-limited (429), pulled from free (404), or otherwise unavailable --
+            # try the next model in the chain rather than failing the whole request.
+            logging.warning("LLM model %s failed, falling back: %s", model, exc)
+            last_error = exc
+            continue
+
+        content = response.choices[0].message.content
+        # The free-tier model occasionally returns empty content (hit during testing)
+        # -- observed on a reasoning-style model that can spend its whole token budget
+        # on hidden reasoning and leave nothing for the actual answer. Treat as a
+        # failure of this model and fall through, rather than returning nothing.
+        if content and content.strip():
+            return content.strip()
+        logging.warning("LLM model %s returned empty content, falling back", model)
+
+    # Every model in the chain failed or returned nothing usable.
+    if last_error is not None:
+        raise last_error
+    return ("Sorry, I couldn't put together a reply for that just now -- "
+             "please try again or rephrase the question.")
 
 
 # ---------------- Chat state + top-level query orchestration ----------------

@@ -10,6 +10,7 @@ Run from the project root (so `panchang_core` resolves):
     uvicorn api.main:app --reload --port 8000
 """
 
+import logging
 import os
 from contextlib import asynccontextmanager
 
@@ -74,7 +75,21 @@ def chat(request: ChatRequest):
     if not query:
         raise HTTPException(status_code=400, detail="query must not be empty")
 
-    result = answer_query(state, query)
+    try:
+        result = answer_query(state, query)
+    except Exception:
+        # An unhandled exception here would otherwise escape FastAPI's exception
+        # middleware and hit Starlette's outer error handler, which sits OUTSIDE
+        # CORSMiddleware -- the resulting response has no Access-Control-Allow-Origin
+        # header, so the browser blocks it and the frontend sees a generic
+        # "Failed to fetch" instead of the real error (hit in production 2026-08-22
+        # when OpenRouter pulled the pinned free model). Raising HTTPException keeps
+        # the response inside CORS middleware's wrapping.
+        logging.exception("answer_query failed for query=%r", query)
+        raise HTTPException(
+            status_code=503,
+            detail="The Panchang assistant is temporarily unavailable. Please try again in a moment.",
+        )
 
     if result["status"] == "answered":
         return {
